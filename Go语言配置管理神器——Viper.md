@@ -2,7 +2,7 @@
 
 Viper能够为你执行下列操作：
 
-1. 查找、加载和反序列化`JSON`、`TOML`、`YAML`、`HCL`、`INI`、`envfile`和`Java properties`格式的配置文件。
+1. 查找、加载和反序列化`JSON`、`TOML`、`YAML`、`HCL`、`INI`、`envfile`和`Java properties`格式的配置文件。****
 2. **提供一种机制为你的不同配置选项设置默认值。**
 3. **提供一种机制来通过命令行参数覆盖指定选项的值。**
 4. **提供别名系统，以便在不破坏现有代码的情况下轻松重命名参数。**
@@ -200,3 +200,4 @@ func LoadConfig(path string )(config Config ,err error){
 <img src="https://miro.medium.com/max/700/1*XYfz6VegpsbpC-jcmnOOkg.png" alt="img" style="zoom:200%;" />
 
 然后在`main()`函数中，我们调用`util.LoadConfig()`并传入`"."`这里，意思是当前文件夹，因为我们的配置文件`app.env`和这个`main.go`文件在同一个位置。
+
